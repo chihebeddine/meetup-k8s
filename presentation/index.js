@@ -176,13 +176,9 @@ export default class Presentation extends React.Component {
             code={require("raw-loader!../assets/kubeadm-config.yaml")}
             ranges={[
               { loc: [0, 0], title: "Kubeadm Init config" },
-              { loc: [0, 11], note: "init config" },
-              { loc: [13, 21], note: "ClusterConfiguration | api endpoint config" },
-              { loc: [22, 45], note: "ClusterConfiguration | etcd config" },
-              { loc: [48, 54], note: "ClusterConfiguration | extra args" },
-              { loc: [55, 58], note: "ClusterConfiguration | network" },
-              { loc: [32, 36], note: "Kubernetes cluster" },
-              { loc: [37, 50], note: "Worker pools" },
+              { loc: [0, 10], note: "init config" },
+              { loc: [16, 18], note: "ClusterConfiguration | etcd config" },
+              { loc: [33, 36], note: "ClusterConfiguration | network" },
             ]}/>
 
         <CodeSlide
@@ -193,9 +189,8 @@ export default class Presentation extends React.Component {
             code={require("raw-loader!../assets/kubeadm-join.yaml")}
             ranges={[
               { loc: [0, 0], title: "Kubeadm Join config" },
-              { loc: [10, 13], note: "Node config" },
-              { loc: [10, 13], note: "Kubenrtes API" },
-              { loc: [13, 15], note: "How to join" },
+              { loc: [8, 11], note: "Kubenrtes API" },
+              { loc: [14, 16], note: "How to join" },
             ]}/>
 
           <Slide transition={["zoom"]} bgColor="primary">
